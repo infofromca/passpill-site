@@ -33,5 +33,21 @@ gulp.task("watch", ["scss"], function () {
   });
 });
 
+// The build task to be run before deploying
+gulp.task("build", ["scss"], function() {
+  var ls = spawn('hugo');
+  ls.stdout.on('data', (data) => {
+    console.log(`Hugo: ${data}`);
+  });
+
+  ls.stderr.on('data', (data) => {
+    console.log(`${data}`);
+  });
+  
+  ls.on('close', code => {
+    console.log(`Hugo build finished.`);
+  })
+});
+
 // Set watch as default task
 gulp.task("default", ["watch"]);
