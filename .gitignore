@@ -49,3 +49,4 @@ node_modules/
 public/
 rev-manifest.json
 *.zip
+npm-debug.log
