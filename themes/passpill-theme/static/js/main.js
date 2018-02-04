@@ -1,5 +1,9 @@
 ;(function () {
 
+	if( location.host.indexOf('passpill.io') !== -1 && location.search.indexOf('dev') === -1 ){
+		return document.write('Coming soon');
+	}
+
 	'use strict';
 
 	// iPad and iPod detection
