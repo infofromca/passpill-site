@@ -1,0 +1,35 @@
+.homeAuthor {
+  background: #334C55;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.homeAuthor:after {
+  content: '';
+  position: absolute;;
+  width: 101%; height: 100px;
+  bottom: -75px; left: 0;
+  transform: rotate(-2deg) scale(1);
+  background: #334C55;
+}
+
+.homeAuthor .container {
+  max-width: 960px;
+}
+
+.homeAuthor h3 {
+  color: #DAE2E5;
+}
+
+.homeAuthor .tright {
+  padding-right: 6%;
+}
+
+.javiContainer {
+  border-left: 1px solid #708289;
+  padding: 50px 0 50px 6%;
+}

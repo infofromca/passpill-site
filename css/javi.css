@@ -1,0 +1,230 @@
+.javi {
+  position: relative;
+}
+
+.javi img {
+  width: 100%;
+}
+
+.javiBody {
+  position: absolute;
+  width: 100%; height: 86.76%;
+  left: 0; bottom: 0;
+  background: url('/img/javi/javi-body.png') center center no-repeat;
+  background-size: 100%;
+}
+
+.javiHead {
+  position: absolute;
+  width: 29.24%; height: 31.05%;
+  left: 35.5%; top: 0;
+  background: url('/img/javi/javi-head.png') center center no-repeat;
+  background-size: 100%;
+  transform-origin: 50% 80%;
+}
+
+.javiLeftArm {
+  position: absolute;
+  width: 30.94%; height: 30.64%;
+  left: 7.7%;
+  top: 15.7%;
+  background: url('/img/javi/javi-arm-left.png') center center no-repeat;
+  background-size: 100%;
+  transform-origin: 20% 0%;
+  transform: rotate(-2deg);
+}
+
+.javiRightArm {
+  position: absolute;
+  width: 31.03%; height: 30.64%;
+  left: 60%;
+  top: 15%;
+  background: url('/img/javi/javi-arm-right.png') center center no-repeat;
+  background-size: 100%;
+  transform-origin: 95% 0;
+}
+
+.javiPc {
+  position: absolute;
+  width: 40.37%; height: 15.48%;
+  left: 29.71%;
+  top: 31.93%;
+  background: url('/img/javi/javi-pc.png') center center no-repeat;
+  background-size: 100%;
+  z-index: 3;
+}
+
+.ani1 .javiRightArm,
+.ani3 .javiRightArm,
+.ani5 .javiRightArm,
+.ani7 .javiRightArm,
+.ani9 .javiRightArm {
+  transform: rotate(8deg);
+}
+
+.ani2 .javiLeftArm,
+.ani4 .javiLeftArm,
+.ani6 .javiLeftArm,
+.ani8 .javiLeftArm {
+  transform: rotate(-8deg);
+}
+
+.ani1 .javiHead,
+.ani3 .javiHead,
+.ani5 .javiHead,
+.ani7 .javiHead,
+.ani9 .javiHead {
+  transform: rotate(3deg);
+}
+
+.ani2 .javiHead,
+.ani4 .javiHead,
+.ani6 .javiHead,
+.ani8 .javiHead {
+  transform: rotate(-5deg);
+}
+
+.ani1 .click2,
+.ani2 .click1,
+.ani3 .click2,
+.ani4 .click3,
+.ani5 .click2,
+.ani6 .click1,
+.ani7 .click2,
+.ani8 .click3,
+.ani9 .click2 {
+  display: block;
+}
+
+.click {
+  position: absolute;
+  display: none;
+  font-family: 'Quicksand', sans-serif;
+  z-index: 10;
+}
+
+.click1 {
+  top: 26%;
+  left: 30%;
+  transform: rotate(-15deg);
+}
+.click2 {
+  top: 28%;
+  left: 60%;
+  transform: rotate(17deg);
+}
+.click3 {
+  top: 28%;
+  left: 45%;
+  transform: rotate(5deg);
+  font-size: 1.3em;
+}
+
+.javiEye {
+  width: 20%;
+  height: 15%;
+  background: #ffff0b;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 2px #ffff0b;
+  transition: box-shadow 2s;
+}
+
+.bright .javiEye {
+  box-shadow: 0 0 40px 10px #ffff0b;
+}
+
+.eyeLeft {
+  left: 18%;
+  top: 54%;
+}
+.eyeRight {
+  left: 56%;
+  top: 54%;
+}
+
+.pcBright {
+  position: absolute;
+  width: 35%;
+  height: 8%;
+  background: #fff;
+  z-index: 2;
+  top: 33%;
+  left: 32.3%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 0 0 30px 10px #eef;
+}
+
+.smoke {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  background: #fff;
+  left: 88%;
+  top: 41%;
+  box-shadow: 0 0 20px 13px #fff;
+  border-radius: 50%;
+}
+
+.smoke1 {
+  animation: shmoke 9s linear 0s infinite;
+}
+.smoke2 {
+  animation: shmoke 9s linear 3s infinite;
+}
+.smoke3 {
+  animation: shmoke 9s linear 6s infinite;
+}
+
+@keyframes shmoke {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0) scale(.6);
+    opacity: .4;
+  }
+
+  30% {
+    transform: translate(-1000%,-3500%) scale(1.3);
+    opacity: .3;
+  }
+
+  60% {
+    transform: translate(1000%,-5000%) scale(1.6);
+    opacity: .2;
+  }
+
+  90% {
+    transform: translate(-1000%,-6500%) scale(1.9);
+    opacity: .1;
+  }
+
+  100% {
+    transform: translate(-1200%,-7000%) scale(2.2);
+    opacity: 0;
+  }
+}
+
+.shadow {
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.shadow1 {
+  width: 88%;
+  height: 2%;
+  top: 94%;
+  left: 6%;
+}
+
+.shadow2 {
+  width: 40%;
+  height: 2%;
+  top: 88%;
+  left: 30%;
+}
