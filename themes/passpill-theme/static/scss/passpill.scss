@@ -1,0 +1,118 @@
+/*
+blue1: #6AE5FF
+blue2: #20C2E3
+blue3: #334C55
+grey: #DAE2E5
+ */
+
+body {
+  font-family: "Oxygen", sans-serif;
+}
+
+
+h1,h2,h3,h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #334C55;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+@media (min-width: 768px){
+  .container {
+      width: 96%;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.box {
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+  position: relative;
+  z-index: 1;
+}
+
+.boxSection {
+  padding: 30px 40px;
+  position: relative;
+  color: #666669;
+}
+
+.boxSection:after {
+  content: ' ';
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 0 auto;
+  background: #eee;
+  position: absolute;
+  left: 50%; bottom: 0;
+  transform: translateX(-50%);
+}
+.boxSection:last-child:after{
+  display: none;
+}
+
+.boxSection img {
+  width: 55px;
+  float: left;
+  position: absolute;
+  left: 40px; top: 50%;
+  transform: translateY(-50%);
+}
+
+.boxTitle {
+  margin-left: 95px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #334C55;
+}
+
+.boxDescription {
+  margin-left: 95px;
+  text-align: justify;
+}
+
+.mainText {
+  font-size: 1.15em;
+}
+
+.rowflex {
+  display: flex;
+  align-items: stretch;
+}
+.rowflex>* {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+a.button {
+  font-family: 'Quicksand', sans-serif;
+  background: #20C2E3;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.tright {
+  text-align: right;
+}
+.tcenter {
+  text-align: center;
+}
+.tleft {
+  text-align: left;
+}
+.tjustify {
+  text-align: justify;
+}

@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+# Passpill theme was created from Elete theme:
+# https://github.com/saey55/hugo-elate-theme/blob/master/LICENSE.md
+
+name = "Passpill"
+license = ""
+licenselink = ""
+description = "Hugo theme for passpill project"
+homepage = ""
+tags = ["Passpill", "Hugo", ""]
+features = ["", "", ""]
+min_version = 0.17
+
+[author]
+  name = "Pieter Saey"
+  homepage = "http://saey55.gitlab.io/pietercv"
+
+[original]
+  name = "Elate"
+  homepage = "https://github.com/saey55/hugo-elate-theme/"
