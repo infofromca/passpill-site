@@ -91,3 +91,28 @@ body.sticky {
   border-color: #6AE5FF;
   text-decoration: none;
 }
+
+.logo, .mobileLogo {
+  float: left;
+  background: url('/img/passpillproject.png') 0 center no-repeat;
+  background-size: 70%;
+  width: 0;
+  height: 40px;
+  margin-top: -5px;
+  transition: width .3s;
+}
+.mobileLogo {
+  display: none;
+}
+
+.appLink {
+  display: none;
+}
+
+.sticky .logo {
+  width: 60px;
+}
+
+.menuToggle {
+  display: none;
+}

@@ -1,10 +1,10 @@
 ;(function () {
 
+	'use strict';
+
 	if( location.host.indexOf('passpill.io') !== -1 && location.search.indexOf('dev') === -1 ){
 		return (document.body.innerHTML = 'Coming soon');
 	}
-
-	'use strict';
 
 	// iPad and iPod detection
 	var isiPad = function(){
@@ -22,8 +22,6 @@
 	var parallax = function() {
 		$(window).stellar();
 	};
-
-
 
 	// Burger Menu
 	var burgerMenu = function() {
@@ -145,6 +143,15 @@
 		});
 	};
 
+	var mobileMenu = function(){
+		$('body').on('click', '.menuToggle', function(){
+			$('body').addClass('menuOpen');
+			$('body').one('click', function(){
+				$('body').removeClass('menuOpen');
+			});
+		});
+	}
+
 	var stickyMenu = function(){
 		var header = $('.homeHeader'),
 			sticky = false,
@@ -236,6 +243,7 @@
 		stickyMenu();
 		animateScroll();
 		animateJavi();
+		mobileMenu();
 
 
 	});

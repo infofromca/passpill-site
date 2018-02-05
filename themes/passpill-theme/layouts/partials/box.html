@@ -1,0 +1,10 @@
+
+<div class="box">
+  {{range .items }}
+    <div class="boxSection">
+      <img src="/img/ppp-{{.img}}-icon.png">
+      <div class="boxTitle">{{ .title }}</div>
+      <div class="boxDescription">{{ .content | markdownify }}</div>
+    </div>
+  {{ end }}
+</div>

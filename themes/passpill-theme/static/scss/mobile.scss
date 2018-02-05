@@ -1,0 +1,68 @@
+@media (max-width: 767px){
+  .menu {
+    position: fixed;
+    top: 0; right: 0;
+    width: 0; height: 0;
+    z-index: 200;
+  }
+
+  .sticky .menu {
+    top: auto; bottom: 60px;
+  }
+
+  .menuToggle {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .homeNav .right {
+    display: none;
+  }
+
+  $menu-width: 300px;
+
+  nav.left {
+    position: absolute;
+    width: $menu-width;
+    top: -10px; right: -$menu-width;
+    margin-right: 0 !important;
+    transition: right .3s;
+    height: 100vh;
+    background: $blue3;
+    padding-top: 80px;
+
+    .logo {
+      display: none;
+    }
+    .mobileLogo {
+      display: block;
+    }
+
+    a {
+      display: block;
+      padding: 10px 20px;
+      width: 100%;
+
+      &:hover {
+        background: rgba(255,255,255,.1);
+      }
+    }
+  }
+
+  .menuOpen {
+    nav {
+      right: 0;
+      box-shadow: 0 0 10px rgba(0,0,0,.5);
+    }
+  }
+
+  .appLink {
+    display: block;
+    margin: 10px;
+    width: 280px !important;
+  }
+}

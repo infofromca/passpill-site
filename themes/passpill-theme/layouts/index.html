@@ -8,16 +8,18 @@
         {{ partial "head.html" .}}
     </head>
     <body>
-      {{ partial "home_header.html" }}
+      {{ partial "home_header.html" .Params.sections.header }}
 
-      {{ partial "home_project.html"}}
+      {{ partial "home_project.html" .Params.sections.project }}
 
-      {{ partial "home_app.html"}}
+      {{ partial "home_app.html" .Params.sections.app }}
 
-      {{ partial "home_collaborate.html"}}
+      {{ partial "home_collaborate.html" .Params.sections.collaborate }}
 
-      {{ partial "home_author.html"}}
+      {{ partial "home_author.html" .Params.sections.author }}
 
       {{ partial "js.html" .}}
+
+      {{ partial "footer.html" }}
     </body>
 </html>

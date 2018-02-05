@@ -3,60 +3,12 @@
     <div class="row">
       <div class="col-sm-5 tright">
         <h2 class="fadeInLeft">The project</h2>
-        <p class="mainText">
-          We will be developing an online tool to
-          store your passwords securely and privately.
-        </p>
-        <p class="mainText">
-          But it’s not about the app,
-          this is an educational project,
-          the important part is the process of building it.
-        </p>
-        <p class="mainText">
-          The experience of creating the tool
-          will be documented extensively
-          generating much more than a web application.
-        </p>
-        <p class="mainText">
-          Can you give a hand?
-          There are many ways of helping the project, discover how you can be part of it.
-        </p>
+        {{ .intro | markdownify }}
         <a href="#collaborate" class="button">Collaborate</a>
       </div>
       <div class="col-sm-7 objectives">
-        <h3>The objectives</h3>
-        <div class="box">
-          <div class="boxSection">
-            <img src="/img/ppp-app-icon.png" alt="">
-            <div class="boxTitle">Create an useful app</div>
-            <div class="boxDescription">
-              Build an application easy to use, where people can keep their passwords for themselves securely.
-            </div>
-          </div>
-          <div class="boxSection">
-            <img src="/img/ppp-code-icon.png" alt="">
-            <div class="boxTitle">Opensource everything</div>
-            <div class="boxDescription">
-              Build an application easy to use, where people can keep their passwords for themselves securely.
-            </div>
-          </div>
-
-          <div class="boxSection">
-            <img src="/img/ppp-blog-icon.png" alt="">
-            <div class="boxTitle">Write about it</div>
-            <div class="boxDescription">
-              Build an application easy to use, where people can keep their passwords for themselves securely.
-            </div>
-          </div>
-
-          <div class="boxSection">
-            <img src="/img/ppp-conversation-icon.png" alt="">
-            <div class="boxTitle">Share knowledge</div>
-            <div class="boxDescription">
-              Build an application easy to use, where people can keep their passwords for themselves securely.
-            </div>
-          </div>
-        </div>
+        <h3>{{ .box.title }}</h3>
+        {{ partial "box.html" .box }}
       </div>
     </div>
   </div>

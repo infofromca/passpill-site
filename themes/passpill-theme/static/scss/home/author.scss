@@ -8,15 +8,6 @@
   color: #fff;
 }
 
-.homeAuthor:after {
-  content: '';
-  position: absolute;;
-  width: 101%; height: 100px;
-  bottom: -75px; left: 0;
-  transform: rotate(-2deg) scale(1);
-  background: #334C55;
-}
-
 .homeAuthor .container {
   max-width: 960px;
 }
@@ -27,6 +18,9 @@
 
 .homeAuthor .tright {
   padding-right: 6%;
+  p {
+    font-size: 1.15em;
+  }
 }
 
 .javiContainer {
