@@ -86,9 +86,9 @@ sections:
       I am a software engineer
       that has been using and creating opensource tools for years.
 
-      I've always liked to write about software development but I've been always busy coding for my side projects and I had almost no time left.
+      I've always liked to write about software development but I've been always busy coding for my side projects with almost no time left.
 
       With the Passpill Project I am trying to turn my priorities upside down: The important part is writing articles!
 
-      You can know more about my inspirations to create all this reading the project introduction and, if you like it, you can support it on Patreon.
+      You can know more about my inspirations to create all of this by reading the project introduction and, if you like it, you can support it on Patreon.
 ---

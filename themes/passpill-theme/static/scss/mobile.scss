@@ -1,4 +1,8 @@
 @media (max-width: 767px){
+  br {
+    display: none;
+  }
+
   .menu {
     position: fixed;
     top: 0; right: 0;
@@ -6,8 +10,18 @@
     z-index: 200;
   }
 
-  .sticky .menu {
-    top: auto; bottom: 60px;
+  .mainText {
+    font-size: 1.1em;
+  }
+
+  .sticky {
+    .menu {
+      top: auto; bottom: 60px;
+    }
+    .mobileLogo {
+      width: 60px;
+      cursor: pointer;
+    }
   }
 
   .menuToggle {
@@ -38,9 +52,6 @@
     .logo {
       display: none;
     }
-    .mobileLogo {
-      display: block;
-    }
 
     a {
       display: block;
@@ -64,5 +75,128 @@
     display: block;
     margin: 10px;
     width: 280px !important;
+  }
+
+  .mobileLogo {
+    display: block;
+  }
+
+
+  .homeHeader {
+    padding-top: 70px;
+
+    .rowflex {
+      flex-direction: column-reverse;
+      margin-bottom: 0;
+
+      &>* {
+        display: block;
+      }
+    }
+
+
+    h1 {
+      position: static;
+      transform: none;
+      margin: 20px auto;
+    }
+
+    .tright {
+      border-right: 0;
+      border-top: 1px solid $blue1;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px 0;
+      text-align: center;
+    }
+  }
+
+  .homeProject {
+    padding-top: 80px;
+
+    .tright {
+      text-align: left;
+      margin: 0 auto;
+      border-right: 0;
+      padding-bottom: 30px !important;
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+    a.button {
+      display: none;
+    }
+
+    .objectives {
+      padding-left: 15px;
+    }
+  }
+
+
+  .homeApp {
+    .values {
+      padding-right: 15px;
+
+    }
+
+    .slogan {
+      max-width: 200px;
+      margin: 0 auto;
+      border-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  .homeCollaborate {
+    padding-top: 80px;
+
+    .tright {
+      display: none;
+    }
+
+    .collaborateIntro {
+      padding: 0 6%;
+      text-align: justify;
+    }
+
+    .ways > div {
+      margin: 0 30px 10px 30px;
+    }
+  }
+
+  .homeAuthor {
+    padding-top: 80px;
+
+    .tright {
+      text-align: left;
+      padding: 0 6%;
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  .javiContainer {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 400px;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 450px){
+  .boxSection {
+    padding: 20px 30px;
+
+    img {
+      left: 30px;
+    }
+
+    .boxTitle, .boxDescription {
+      margin-left: 80px;
+      text-align: left;
+    }
   }
 }
