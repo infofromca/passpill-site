@@ -1,11 +1,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> {{ .Title }}</title>
+    <title>{{ .Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--     <meta name="description" content="Free HTML5 Template by FREEHTML5.CO - Hugo port by Pieter Saey" />
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive, hugo, static site" />
-    <meta name="author" content="FREEHTML5.CO / Hugo port " />
- -->
+
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
@@ -62,23 +59,10 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,700|Quicksand|Raleway:900" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- link rel="stylesheet" href="css/animate.css" -->
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
-    <!--
-    Default Theme Style
-    You can change the style.css (default color purple) to one of these styles
-
-    1. pink.css
-    2. blue.css
-    3. turquoise.css
-    4. orange.css
-    5. lightblue.css
-    6. brown.css
-    7. green.css
-
-    -->
     <link rel="stylesheet" href="css/style.css">
 
     <!--
@@ -96,3 +80,13 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114682386-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114682386-1');
+    </script>

@@ -11,7 +11,7 @@ It also uses Gulp to write Sass style rules instead of plain CSS.
 
 ## Local installation
 
-First [install Hugo in your computer](https://gohugo.io/getting-started/installing/).
+First [install Hugo in your computer](https://gohugo.io/getting-started/installing/). We need at least version 0.36.
 
 Then open your terminal and clone the repo
 ```

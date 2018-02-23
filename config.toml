@@ -9,7 +9,7 @@ theme = "passpill-theme"
   custom_css = ["css/index.css"]
 
   # Meta
-  author = ""
+  author = "Javier Marquez - http://arqex.com"
   description = ""
   email = ""
 
@@ -47,3 +47,6 @@ theme = "passpill-theme"
   [blackfriday]
     # Transform \n into <br>
     extensions=["hardLineBreak"]
+
+  [OpenGraph]
+    hide = true

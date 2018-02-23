@@ -76,6 +76,10 @@ body.sticky {
   color: #fff;
   margin-right: 30px;
   text-decoration: none;
+
+  &.active {
+    color: $blue1;
+  }
 }
 
 

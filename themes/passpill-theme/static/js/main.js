@@ -2,10 +2,6 @@
 
 	'use strict';
 
-	if( location.host.indexOf('passpill.io') !== -1 && location.search.indexOf('dev') === -1 ){
-		return (document.body.innerHTML = 'Coming soon');
-	}
-
 	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
@@ -17,28 +13,6 @@
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
-
-	// Parallax
-	var parallax = function() {
-		$(window).stellar();
-	};
-
-	// Burger Menu
-	var burgerMenu = function() {
-
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
-
-			event.preventDefault();
-
-			if ( $('#navbar').is(':visible') ) {
-				$(this).removeClass('active');
-			} else {
-				$(this).addClass('active');
-			}
-		});
-
-	};
-
 
 	var goToTop = function() {
 
@@ -85,17 +59,19 @@
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
 
-		var $el = $('#navbar > ul');
-		$el.find('li').removeClass('active');
+		var $el = $('nav.left > a');
+		$el.removeClass('active');
 		$el.each(function(){
-			$(this).find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
+			if( this.hash.slice(1) === section ){
+				$(this).addClass('active');
+			}
 		});
 
 	};
 
 	var navigationSection = function() {
 
-		var $section = $('section[data-section]');
+		var $section = $('[data-section]');
 
 		$section.waypoint(function(direction) {
 
@@ -115,9 +91,6 @@
 		});
 
 	};
-
-
-
 
 
 	// Window Scroll
@@ -227,11 +200,6 @@
 
 	// Document on load.
 	$(function(){
-
-		parallax();
-
-		burgerMenu();
-
 		clickMenu();
 
 		windowScroll();
@@ -244,8 +212,6 @@
 		animateScroll();
 		animateJavi();
 		mobileMenu();
-
-
 	});
 
 

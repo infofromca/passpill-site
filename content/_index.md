@@ -1,12 +1,14 @@
 ---
+title: 'PassPill Project - Sharing a webapp development completely'
 myParam: 'Hey there'
 sections:
   header: |
-    Let's build **together** a
-    password manager app
+    Let's create a password
+    manager app **together**
 
     Let's make its code
     **open source**
+
 
     Let's **share**
     the process of building it
@@ -30,11 +32,11 @@ sections:
       items:
         - title: Create an useful app
           img: app
-          content: Build a functional application, easy to use, where people can keep their passwords safely.
+          content: Build [a functional application](https://app.passpill.io), easy to use, where people can keep their passwords safely.
 
-        - title: Opensource everything
+        - title: OpenSource everything
           img: code
-          content: All the code generated will be [available for anyone](https://github.com/passpill-io), to inspect, to improve, or even to install in their own servers.
+          content: All [the code generated](https://github.com/passpill-io) will be available for anyone, to inspect, to improve, or even to install in their own servers.
 
         - title: Write about it
           img: blog
@@ -46,6 +48,7 @@ sections:
         - title: Share knowledge
           img: conversation
           content: The PassPill Project is an opportunity to learn and collaborate for everybody. It's open to ideas, criticism and improvements.
+
   app:
     box:
       title: 'Passpill app values'
@@ -61,23 +64,24 @@ sections:
           content: The encryption algorithms are public and the app code is opensource. You don't need to trust us, you can actually check how it works.
         - title: Free forever
           img: piggy
-          content: PassPill is the result of an educational project, that's why it's free and always will be. You can support the project if you like it.
+          content: PassPill is the result of an educational project, that's why it's free and always will be. But if like the project, you can [support it at Patreon](https://www.patreon.com/passpillproject) and get some goodies!
 
   collaborate:
     title: Collaborate
     intro: |
-      PassPill project is a one person’s idea, a way of enjoying building an app through sharing the development process. However it’s a lot of work! Every bit of help is much appreciated. There are many ways of collaborating:
+      PassPill project is a one person’s idea, a way of enjoying building an app through sharing the development process. However it’s a lot of work! Every bit of help is much appreciated and there are many ways of collaborating:
     boxes:
       - icon: github
         url: https://github.com/passpill-io
         text: Are you a developer? Help with the code, fork the app and give it a star in GitHub
       - icon: patreon
+        url: https://www.patreon.com/passpillproject
         text: One dollar helps a lot. Support us on Patreon and be the first on reading the articles
       - icon: twitter
         url: https://twitter.com/passpillio
-        text: Allow PassPill to reach more people. Follow @passpillio on Twitter and share the articles
-      - icon: forum
-        text: Join the discussion, give ideas and ask for features. Participate in the forum
+        text: Help us reaching more people. Follow @passpillio on Twitter and share the articles you like
+      #- icon: forum
+      #  text: Join the discussion, give ideas and ask for features. Participate in the forum
 
   author:
     title: About the author
@@ -86,9 +90,9 @@ sections:
       I am a software engineer
       that has been using and creating opensource tools for years.
 
-      I've always liked to write about software development but I've been always busy coding for my side projects with almost no time left.
+      I've always liked to write about software development but there has always been more important things to do.
 
       With the Passpill Project I am trying to turn my priorities upside down: The important part is writing articles!
 
-      You can know more about my inspirations to create all of this by reading the project introduction and, if you like it, you can support it on Patreon.
+      You can know more about my reasons to create all of this by reading the project introduction article.
 ---
