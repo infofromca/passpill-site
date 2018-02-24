@@ -86,13 +86,13 @@ sections:
   author:
     title: About the author
     intro: |
-      My name is [Javier Marquez](http://arqex.com) and
+      My name is [Javier Márquez](http://arqex.com) and
       I am a software engineer
       that has been using and creating opensource tools for years.
 
       I've always liked to write about software development but there has always been more important things to do.
 
-      With the Passpill Project I am trying to turn my priorities upside down: The important part is writing articles!
+      With the Passpill Project I am trying to turn my priorities upside down: The important part is [writing articles](https://medium.com/passpill-project)!
 
-      You can know more about my reasons to create all of this by reading the project introduction article.
+      You can know more about my reasons to create all of this by reading [the project introduction article](https://medium.com/passpill-project/the-loneliness-and-joy-of-programming-e2854dbfdb69).
 ---
