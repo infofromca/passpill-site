@@ -69,7 +69,7 @@ sections:
   collaborate:
     title: Collaborate
     intro: |
-      PassPill project is a one person’s idea, a way of enjoying building an app through sharing the development process. However it’s a lot of work! Every bit of help is much appreciated and there are many ways of collaborating:
+      PassPill project is a one person’s idea, a way of enjoying building an app through sharing the development process. However it’s a lot of work! Every bit of help is much appreciated and there are many ways of collaborating.
     boxes:
       - icon: github
         url: https://github.com/passpill-io
