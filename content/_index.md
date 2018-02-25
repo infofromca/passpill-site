@@ -58,7 +58,7 @@ sections:
           content: The best encryption algorithms will make protect your data. away from strangers' hands.
         - title: Privacy
           img: eye
-          content: Data encryption and decryption will happen in your browser, using the key that you only know. We won't be able to access. You don't even need to give your email address.
+          content: Data encryption and decryption will happen in your browser using the key that you only know. We won't be able to access. You don't even need to give your email address.
         - title: Transparency
           img: transparency
           content: The encryption algorithms are public and the app code is opensource. You don't need to trust us, you can actually check how it works.
