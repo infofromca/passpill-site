@@ -8,7 +8,7 @@ In this page we will be updating the current status of the app, so if you are ne
 
 ## Front-end, the app
 
-The front-end is in its initial stage, and need the user to run a local server to work. But there are some things in place:
+[The front-end](https://github.com/passpill-io/passpill-app) is in its initial stage, and need the user to run a local server to work. But there are some things in place:
 
 * Basic encryption is working.
 * It's possible to create, fetch and save the pills.
@@ -25,7 +25,7 @@ On the other hand there are many things to work on:
 
 ## Back-end
 
-The back-end is even in a earlier stage than the front-end. It's not online because we want it to use a nice web service to provide the API, like AWS Lambda functions and DynamoDB, but nothing is decided in this matter.
+[The back-end](https://github.com/passpill-io/passpill-backend) is even in a earlier stage than the front-end. It's not online because we want it to use a nice web service to provide the API, like AWS Lambda functions and DynamoDB, but nothing is decided in this matter.
 
 However there is a node.js server working in the repo, and it provides the API that the app needs to store the pills.
 
@@ -36,7 +36,7 @@ We want to support most of the common cloud computing services via adapters, and
 
 ## The site
 
-In the repo we have a Hugo static site with styles cloned from [the Elate theme](https://github.com/saey55/hugo-elate-theme).
+[In the site repo](https://github.com/passpill-io/passpill-site) we have a Hugo static site with styles cloned from [the Elate theme](https://github.com/saey55/hugo-elate-theme).
 
 The site was created in a hurry to publish the project so it still have a lot of the styles and scripts used by Elate. We need to make a big clean up.
 
