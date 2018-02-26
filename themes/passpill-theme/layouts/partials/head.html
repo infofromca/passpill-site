@@ -61,9 +61,9 @@
     <!-- Animate.css -->
     <!-- link rel="stylesheet" href="css/animate.css" -->
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!--
        custom css files can be configured in config.toml:
@@ -71,7 +71,7 @@
           custom_css = ["css/foo.css", "css/bar.css"]
      -->
     {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ . }}">
+    <link rel="stylesheet" href="/{{ . }}">
     {{ end }}
 
     <!-- Modernizr JS -->

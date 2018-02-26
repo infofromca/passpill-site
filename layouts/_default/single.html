@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        {{ partial "head.html" .}}
+    </head>
+    <body>
+    {{ partial "header.html" .Params.sections.header }}
+    <section class="innerContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1 class="innerTitle">{{ .Title }}</h1>
+            <div class="box">
+              {{.Content}}
+            </div>
+          </div>
+          <div class="col-sm-4 sidebar">
+            <div class="sidebarContent">
+              <div class="pppLogo">
+              </div>
+              {{ .Site.Data.sidebar.content | markdownify }}
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    {{ partial "footer.html" }}
+</body>
+</html>

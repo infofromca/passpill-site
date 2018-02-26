@@ -44,9 +44,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-bower_components/
-node_modules/
-public/
+bower_component
+node_modules
+public
 rev-manifest.json
 *.zip
 npm-debug.log

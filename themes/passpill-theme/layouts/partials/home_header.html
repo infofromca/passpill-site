@@ -1,9 +1,11 @@
 <header class="homeHeader">
   <div class="container">
     <div class="row rowflex">
+      {{ if . }}
       <div class="col-sm-6 tright" data-section="1">
         {{ . | markdownify }}
       </div>
+      {{ end }}
       <div class="col-sm-6">
         <h1>Passpill project</h1>
       </div>
